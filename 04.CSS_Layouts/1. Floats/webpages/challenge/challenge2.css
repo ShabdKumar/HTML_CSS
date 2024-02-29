@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,9 +12,42 @@ body {
   line-height: 1.4;
 }
 
+.container {
+  width: 908px;
+  margin: 40px auto 0 auto;
+  border: 4px solid #000;
+  position: relative;
+}
+
 header {
   background-color: #eee;
   margin: 1px 0;
+}
+
+.product-img {
+  width: 300px;
+  float: left;
+  padding: 1px;
+}
+
+.price-options {
+  width: 300px;
+  float: left;
+  padding: 20px 20px;
+}
+
+.price {
+  float: left;
+}
+
+.details {
+  width: 300px;
+  float: right;
+  padding: 20px 20px;
+}
+
+img {
+  display: block;
 }
 
 h3,
@@ -85,23 +119,18 @@ button:hover {
   font-size: 12px;
   text-transform: uppercase;
   margin-bottom: 25px;
-}
-
-.container {
-  width: 825px;
-  margin: 40px auto 0 auto;
-  border: 4px solid #000;
-  position: relative;
+  float: right;
+  margin-top: 5px;
 }
 
 .home {
-  width: 825px;
+  width: 908px;
   margin: 5px auto;
   text-align: end;
 }
 
 .color-selection {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .color-black,
@@ -150,4 +179,10 @@ a:visited {
 a:hover,
 a:active {
   text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
 }

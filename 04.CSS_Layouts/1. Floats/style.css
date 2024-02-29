@@ -10,6 +10,16 @@ body {
   position: relative;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #e7e7e7;
+  margin: 20px 0;
+}
+
 h1,
 h2,
 h3 {
@@ -20,6 +30,38 @@ h1 {
   font-size: 35px;
   text-transform: uppercase;
   font-style: italic;
+  float: left;
+}
+
+nav {
+  font-size: 16px;
+  text-align: end;
+  float: right;
+}
+
+nav a:link {
+  margin-right: 20px;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 10px;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  width: 800px;
+  float: left;
 }
 
 h2 {
@@ -51,7 +93,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 10px 0px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -62,12 +104,12 @@ p {
 
 ul,
 ol {
-  margin: 10px 40px;
+  margin: 10px 0;
 }
 
 li {
   font-size: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 aside {
@@ -75,14 +117,10 @@ aside {
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
   margin-top: 20px;
-  padding: 15px 0px;
-  width: 500px;
-}
-
-nav {
-  font-size: 15px;
-  padding-bottom: 5px;
-  text-align: end;
+  padding: 15px 25px;
+  width: 350px;
+  float: right;
+  box-sizing: border-box;
 }
 
 button {
@@ -138,6 +176,9 @@ article p:last-child {
 #copyright {
   font-size: 12px;
   text-align: end;
+  clear: both;
+  background-color: #e799a3;
+  color: #fff;
 }
 
 /* article header p {
@@ -147,6 +188,12 @@ article p:last-child {
 #author {
   font-style: italic;
   font-size: 12px;
+  float: left;
+  margin-top: 37px;
+}
+
+.related-posts-imgs {
+  float: left;
 }
 
 .related-posts {
@@ -156,6 +203,8 @@ article p:last-child {
 .related-posts-topics {
   font-weight: normal;
   font-style: normal;
+  float: right;
+  margin-top: 25px;
 }
 
 .related-authors {
@@ -163,11 +212,7 @@ article p:last-child {
   font-weight: bold;
   color: #444;
   font-style: normal;
-}
-
-.main-header {
-  background-color: #e7e7e7;
-  margin: 20px 0;
+  float: right;
 }
 
 .secondary-header {
@@ -175,13 +220,14 @@ article p:last-child {
 }
 
 .post-img {
-  width: 700px;
+  width: 100%;
   height: auto;
 }
 
-.container {
-  width: 700px;
-  margin: 0 auto;
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 /* Styling Links */
@@ -204,14 +250,4 @@ a:hover {
 a:active {
   background-color: #01f9c6;
   font-style: italic;
-}
-
-nav a:link {
-  margin-right: 30px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-nav a:link:last-child {
-  margin-right: 10px;
 }

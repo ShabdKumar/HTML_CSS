@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 5px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #e7e7e7;
+  margin: 20px 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-style: italic;
+  float: left;
+}
+
+nav {
+  font-size: 16px;
+  text-align: end;
+  float: right;
+}
+
+nav a:link {
+  margin-right: 20px;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 10px;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+article {
+  width: 800px;
+  float: left;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+h2::after {
+  content: "Top";
+  color: #000;
+  background-color: #f9b7ff;
+  font-size: 12px;
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+ul,
+ol {
+  margin: 10px 0;
+}
+
+li {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+aside {
+  background-color: #e7e7e7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  margin-top: 20px;
+  padding: 15px 25px;
+  width: 350px;
+  float: right;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #b09fca;
+  border: 2px solid red;
+  font-family: cursive;
+
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  color: white;
+  background-color: black;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  color: olivedrab;
+}
+
+/* article first child should be paragraph. Then below css will work.
+Here it won't work as header is the first child of article. */
+article p:first-child {
+  background-color: red;
+}
+
+/* Since paragraph is the last child of article. It will work fine. */
+article p:last-child {
+  color: #000;
+}
+
+/* footer p {
+  font-size: 12px;
+} */
+
+#copyright {
+  font-size: 12px;
+  text-align: end;
+  clear: both;
+  background-color: #e799a3;
+  color: #fff;
+}
+
+/* article header p {
+  font-style: italic;
+} */
+
+#author {
+  font-style: italic;
+  font-size: 12px;
+  float: left;
+  margin-top: 37px;
+}
+
+.related-posts-imgs {
+  float: left;
+}
+
+.related-posts {
+  list-style: none;
+}
+
+.related-posts-topics {
+  font-weight: normal;
+  font-style: normal;
+  float: right;
+  margin-top: 25px;
+}
+
+.related-authors {
+  font-size: 13px;
+  font-weight: bold;
+  color: #444;
+  font-style: normal;
+  float: right;
+}
+
+.secondary-header {
+  margin-bottom: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+/* Styling Links */
+/* ------------- */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: #01f9c6;
+  font-style: italic;
+}
