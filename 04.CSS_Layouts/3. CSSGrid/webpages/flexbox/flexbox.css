@@ -1,0 +1,62 @@
+.el--1 {
+  background-color: blueviolet;
+  align-self: flex-end;
+}
+.el--2 {
+  background-color: orangered;
+  order: -1;
+}
+.el--3 {
+  background-color: green;
+  height: 150px;
+}
+.el--4 {
+  background-color: goldenrod;
+  order: -1;
+}
+.el--5 {
+  background-color: palevioletred;
+  order: 1;
+}
+.el--6 {
+  background-color: steelblue;
+  align-self: flex-start;
+}
+.el--7 {
+  background-color: yellow;
+}
+.el--8 {
+  background-color: crimson;
+  order: -1;
+}
+
+.container {
+  /* STARTER */
+  font-family: sans-serif;
+  background-color: #ddd;
+  font-size: 40px;
+  margin: 40px;
+
+  /* FLEXBOX */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.outer {
+  border: 2px solid red;
+  width: 200px;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  border: 2px solid blue;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
