@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  height: 100vh;
+  text-align: center;
+
+  display: grid;
+  grid-template-columns: 80px 250px 1fr 250px;
+  grid-template-rows: 64px 1fr;
+}
+
+nav {
+  grid-row: 1 / -1;
+  background-color: #475569;
+}
+
+menu {
+  grid-column: 2 / -1;
+  background-color: #7c3aed;
+  padding: 0 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+menu button {
+  background-color: #4c1d95;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+menu button:last-child {
+  background-color: #f43f5e;
+  margin-left: auto;
+}
+
+menu button:hover,
+menu button:active {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+nav,
+button {
+  color: #fff;
+}
+
+nav,
+main,
+aside {
+  padding-top: 16px;
+}
+
+section,
+aside {
+  background-color: #f4f4f5;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-weight: 500;
+  overflow: scroll;
+}
+
+/* section:hover {
+  overflow: scroll;
+} */
+
+section div {
+  padding: 12px 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+section div:nth-child(odd) {
+  background-color: #e4e4e7;
+}
+
+section div:hover,
+section div:active {
+  background-color: #7c3aed;
+  color: #fff;
+}
